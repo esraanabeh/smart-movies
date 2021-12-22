@@ -1,0 +1,51 @@
+body{
+  direction: ltr;
+  text-align: left;
+}
+
+
+/* Start header*/
+
+.mobile_menu_toggler {
+  left: 28px;
+}
+
+
+/* main slider */
+
+.carousel-caption {
+  left: 0;
+  text-align: left;
+}
+
+
+
+/* consultant section*/
+
+.call__us__btn {
+  right: 80px;
+}
+
+@media(max-width: 576px) {
+  .call__us__btn {
+    right: 28px;
+  }
+}
+
+/* about section */
+
+.about_img_wrapper::before {
+  right: 31px;
+}
+
+@media(max-width: 1200px) {
+  .about_img_wrapper::before {
+    right: 0;
+  }
+}
+/* start footer*/
+
+.go-top {
+  left: 10px;
+}
+

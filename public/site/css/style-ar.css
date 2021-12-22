@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&display=swap');
+body{
+  direction: rtl;
+  text-align: right ;
+  font-family: 'Changa', sans-serif;
+}
+.dropdown-menu{
+  text-align: right !important;
+}
+
+/* Start header*/
+
+.mobile_menu_toggler {
+  left: 28px;
+}
+
+/* main slider */
+
+.carousel-caption {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+
+/* consultant section*/
+
+.call__us__btn {
+  left: 80px;
+}
+
+@media(max-width: 576px) {
+  .call__us__btn {
+    left: 28px;
+  }
+}
+
+/* about section */
+
+.about_img_wrapper::before {
+  left: 31px;
+}
+
+@media(max-width: 1200px) {
+  .about_img_wrapper::before {
+    left: 0;
+  }
+}
+
+/* start footer*/
+
+.go-top {
+  right: 10px;
+}
+
+
+/* our services page */
+
+.page-item:last-child .page-link,
+.page-item:first-child .page-link {
+  transform: rotate(180DEG);
+  -webkit-transform: rotate(180DEG);
+  -moz-transform: rotate(180DEG);
+  -ms-transform: rotate(180DEG);
+  -o-transform: rotate(180DEG);
+}
+
+
+
