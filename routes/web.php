@@ -87,8 +87,6 @@ Route::get('/site-logout', [AuthSiteController::class, 'logout'])->name('siteLog
 Route::post('/site-login', [AuthSiteController::class, 'siteLogin'])->name('siteLogin');
 Route::get('/signup', [AuthSiteController::class, 'index'])->name('index');
 Route::post('/storedata', [AuthSiteController::class, 'storedata'])->name('storedata');
-Route::get('/about', [PageSiteController::class, 'about'])->name('about');
-Route::get('/teams', [TeamSiteController::class, 'teams'])->name('teams');
 Route::get('/contacts', [ContactSiteController::class, 'contacts'])->name('contacts');
 Route::post('/storecontact', [ContactSiteController::class, 'storecontact'])->name('storecontact');
 Route::get('404', [HomeController::class, 'error_page']);
