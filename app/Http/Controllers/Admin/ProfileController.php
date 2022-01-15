@@ -33,14 +33,6 @@ class ProfileController extends Controller {
      */
     public function update(UpdateProfile $request, $id) {
         $this->user->edit($id, $request);
-
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بتعديل  بيانات حسابه';
-        $action->en_action = 'update his profile info';
-        $action->ip = request()->ip();
-        $action->save();
-
         $message = 'تم حفظ التعديل بنجاح';
         return back()->with(['message' => $message]);
     }

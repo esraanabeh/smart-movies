@@ -53,31 +53,16 @@
         </div>
         <div class="row">
 
-        <div class="col-lg-3 col-xs-6">
-            <a href="{{ URL::to('admin/clients') }}">
-                <!-- small box -->
-                <div class="small-box bg-maroon">
-                    <div class="inner">
-
-                        <p>{{ trans('admin.clients') }}</p>
-                      <h3>{{ $clients }}</h3>
-
-                    </div>
-                    <div class="icon" style="font-size: -webkit-xxx-large;">
-                        <i class="ion ion-person-add"></i>
-                    </div>
-                </div>
-            </a>
-        </div>
+      
 
         <div class="col-lg-3 col-xs-6">
             <!-- small box -->
-            <a href="{{ URL::to('admin/services') }}">
+            <a href="{{ URL::to('admin/movies') }}">
                 <div class="small-box bg-green">
 
                     <div class="inner">
-                        <p>{{ trans('admin.services') }}</p>
-                        <h3>{{ $services }}</h3>
+                        <p>{{ trans('admin.movies') }}</p>
+                        <h3>{{ $movies }}</h3>
 
                     </div>
                     <div class="icon" style="font-size: -webkit-xxx-large;">
@@ -89,40 +74,42 @@
 
         <div class="col-lg-3 col-xs-6">
             <!-- small box -->
-            <a href="{{ URL::to('admin/teams') }}">
-                <div class="small-box bg-olive">
+            <a href="{{ URL::to('admin/packages') }}">
+                <div class="small-box bg-green">
 
                     <div class="inner">
-                        <p>{{ trans('admin.teams') }}</p>
-                        <h3>{{ $teams }}</h3>
+                        <p>{{ trans('admin.packages') }}</p>
+                        <h3>{{ $packages }}</h3>
 
-                        
                     </div>
                     <div class="icon" style="font-size: -webkit-xxx-large;">
-                        <i class="ion ion-bag"></i>
+                        <i class="ion ion-pie-graph"></i>
                     </div>
                 </div>
             </a>
         </div>
-
 
         <div class="col-lg-3 col-xs-6">
             <!-- small box -->
-            <a href="{{ URL::to('admin/consultant') }}">
-                <div class="small-box bg-purple">
+            <a href="{{ URL::to('admin/pages') }}">
+                <div class="small-box bg-green">
 
                     <div class="inner">
-                        <p>{{ trans('admin.consultant') }}</p>
-                        <h3>{{ $consultant }}</h3>
+                        <p>{{ trans('admin.pages') }}</p>
+                        <h3>{{ $pages }}</h3>
 
-                        
                     </div>
                     <div class="icon" style="font-size: -webkit-xxx-large;">
-                        <i class="fa fa-shopping-cart"></i>
+                        <i class="ion ion-pie-graph"></i>
                     </div>
                 </div>
             </a>
         </div>
+
+      
+
+
+        
 
     </div>
 

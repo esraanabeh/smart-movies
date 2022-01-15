@@ -78,7 +78,7 @@
                             <tr>
                                 <th class="{{$text}}">#</th>
                                 <th class="{{$text}}">{{trans('admin.name')}}</th>
-                                <th class="{{$text}}">{{trans('admin.phone')}}</th>
+                                <th class="{{$text}}">{{trans('admin.message')}}</th>
                                 <th class="{{$text}}">{{trans('admin.date')}}</th>
                                 <th class="{{$text}}">{{trans('admin.contact_active')}}</th>
                                 <th class="{{$text}}">{{trans('admin.reply')}}</th>
@@ -91,7 +91,7 @@
                                 <tr>
                                     <td>{{$i}}</td>
                                     <td>{{$contact['name']}}</td>
-                                    <td>{{$contact['phone']}}</td>
+                                    <td>{{$contact['message']}}</td>
                                     <td>{{$contact['created_at']}}</td>
                                     <td>
                                         @if($contact['seen'] == "yes" && $contact['reply'] != "")

@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SocialMedia extends Model {
-
-    //
+class SocialMedia extends Model
+{
+    use HasFactory;
     protected $table = 'social_media';
+    protected $fillable = ['type','link','image'];
+
 
     public function getAll() {
         return $this->all();
@@ -23,14 +26,4 @@ class SocialMedia extends Model {
         $social_media->link = $data['link'];
         return $social_media->save();
     }
-
-    public function remove($id) {
-        $social_media = $this->find($id);
-        return $social_media->delete();
-    }
-
-    public function getImageAttribute($image){
-        return url('image/' , $image);
-    }
-
 }

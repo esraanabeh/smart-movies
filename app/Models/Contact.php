@@ -2,31 +2,21 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model {
-
-    public function user(){
-        return $this->belongsTo(User::class , 'user_id');
-    }
-    protected $table = 'contacts';
-    protected $fillable = ['name', 'email', 'phone'];
+class Contact extends Model
+{
+    use HasFactory;
+    protected $fillable = ['name','phone','email','message','reply','seen','status'];
 
     public function getAll() {
         return $this->all();
     }
 
+
     public function getById($id) {
         return $this->find($id);
-    }
-
-    public function add($data) {
-        $this->name = $data['name'];
-        $this->phone = $data['phone'];
-        $this->email = $data['email'];
-        $this->message = $data['message'];
-        $this->reply = "";
-        return $this->save();
     }
 
     public function update_seen($id) {
@@ -45,6 +35,7 @@ class Contact extends Model {
         return $contact->save();
     }
 
+
     public function remove($id) {
         $contact = $this->find($id);
         return $contact->delete();
@@ -55,3 +46,5 @@ class Contact extends Model {
     }
 
 }
+
+

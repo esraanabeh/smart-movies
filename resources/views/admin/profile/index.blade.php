@@ -51,24 +51,16 @@ if ($lang == "ar") {
                         @endif
 
                         <div class="form-group row">
-                            <label for="ar_name" class="col-sm-3 col-form-label">{{trans('admin.ar_name')}}</label>
+                            <label for="name" class="col-sm-3 col-form-label">{{trans('admin.name')}}</label>
                             <div class="col-sm-9">
-                                {{ Form::text('ar_name', Auth::User()->ar_name, ['class'=>'form-control','id'=>'ar_name']) }}
-                                @if($errors->has('ar_name'))
-                                <div class="alert alert-danger">{{$errors->first('ar_name')}}</div>
+                                {{ Form::text('name', Auth::User()->name, ['class'=>'form-control','id'=>'name']) }}
+                                @if($errors->has('name'))
+                                <div class="alert alert-danger">{{$errors->first('name')}}</div>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="en_name" class="col-sm-3 col-form-label">{{trans('admin.en_name')}}</label>
-                            <div class="col-sm-9">
-                                {{ Form::text('en_name', Auth::User()->en_name, ['class'=>'form-control','id'=>'en_name']) }}
-                                @if($errors->has('en_name'))
-                                <div class="alert alert-danger">{{$errors->first('en_name')}}</div>
-                                @endif
-                            </div>
-                        </div>
+                        
 
                         <div class="form-group row">
                             <label for="email" class="col-sm-3 col-form-label">{{trans('admin.email')}}</label>
@@ -90,15 +82,7 @@ if ($lang == "ar") {
                             </div>
                         </div> --}}
 
-                        <div class="form-group row">
-                            <label for="phone" class="col-sm-3 col-form-label">{{trans('admin.phone')}}</label>
-                            <div class="col-sm-9">
-                                {{ Form::text('phone', Auth::User()->phone, ['class'=>'form-control','id'=>'phone']) }}
-                                @if($errors->has('phone'))
-                                <div class="alert alert-danger">{{$errors->first('phone')}}</div>
-                                @endif
-                            </div>
-                        </div>
+                       
 
                     </div>
                 </div>

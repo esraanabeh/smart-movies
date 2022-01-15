@@ -77,7 +77,6 @@ if ($lang == "ar") {
                                 <td>{{$i}}</td>
                                 <td>{{trans('admin.'.$one['type'])}}</td>
                                 <td>{{$one['link']}}</td>
-                                <td> <img src="{{asset($one->image)}}" style="max-width:60px;"/></td>
                                 
                                 <td>
                                     {{ Form::open(array('url' =>'admin/social_media/'.$one->id.'/edit', 'method' => 'GET')) }}

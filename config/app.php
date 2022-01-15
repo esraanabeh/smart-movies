@@ -143,7 +143,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Spatie\Permission\PermissionServiceProvider::class,
         //  SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
         /*
          * Application Service Providers...

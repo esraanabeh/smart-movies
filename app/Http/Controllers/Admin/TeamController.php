@@ -26,13 +26,7 @@ class TeamController extends Controller
      */
     public function index()
     {
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بفتح صفحة فريق الموقع';
-        $action->en_action = 'Open website team';
-        $action->ip = request()->ip();
-        $action->save();
-
+       
         $teams = $this->team->getAll();
         return view('admin.teams.index', ['teams' => $teams]);
     }
@@ -69,27 +63,11 @@ class TeamController extends Controller
         }
         $team = new Team();
         
-        $team->ar_name = $request->ar_name;
-
-        $team->en_name = $request->en_name;
-
-        $team->ar_title = $request->ar_title;
-
-        $team->en_title = $request->en_title;
-
-        $team->ar_details =  $request->ar_details;
-
-        $team->en_details = $request->en_details;
-
-        $team->image = $imageName;
+        $team->name = $request->name;
+ $team->image = $imageName;
         $team->save();
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بإضافة خدمة جديدة ' . $request['ar_title'];
-        $action->en_action = 'Add new team ' . $request['en_title'];
-        $action->ip = request()->ip();
-        $action->save();
+   
 
         $message = trans('admin.add_suc');
         return back()->with(['message' => $message]);
@@ -140,26 +118,13 @@ class TeamController extends Controller
             $image = $request->file('image');
             $team->image = $imageName;
         }
-        $team->ar_name = $request->ar_name;
+        $team->name = $request->name;
 
-        $team->en_name = $request->en_name;
-        
-        $team->ar_title = $request->ar_title;
-
-        $team->en_title = $request->en_title;
-
-        $team->en_details =  $request->en_details;
-        
-        $team->ar_details = $request->ar_details;
+      
 
         $team->save();
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بتعديل  خدمة حالية ' . $request['ar_title'];
-        $action->en_action = 'Edit current team ' . $request['en_title'];
-        $action->ip = request()->ip();
-        $action->save();
+      
 
         $message = trans('admin.edit_suc');
         return redirect('admin/teams')->with(['message' => $message]);
@@ -176,12 +141,6 @@ class TeamController extends Controller
         //
         $team = Team::find($id);
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بحذف عضو حالي ' . $team['ar_title'];
-        $action->en_action = 'Delete current member ' . $team['en_title'];
-        $action->ip = request()->ip();
-        $action->save();
         $team->delete();
         $message = trans('admin.delete_suc');
         return back()->with(['message' => $message]);

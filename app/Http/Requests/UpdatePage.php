@@ -24,11 +24,9 @@ class UpdatePage extends FormRequest {
         $id = $this->segment(3);
         return [
             //
-            "ar_title" => "required|unique:pages,ar_title,$id",
-            "en_title" => "required|unique:pages,en_title,$id",
-            "ar_desc" => "required",
-            "en_desc" => "required",
-            "image" => "mimes:jpeg,jpg,png,bmp,gif,svg",
+            "title" => "required|unique:pages,title,$id",
+            "content" => "required",
+            
         ];
     }
 

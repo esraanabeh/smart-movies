@@ -18,6 +18,7 @@ return [
     'cities'                    => 'Cities',
     'logout'                    => 'Logout',
     'contact'                   => 'Contact Us',
+    'content'                   =>'content',
     'rights'                    => 'All rights are reserved',
     'contact_count'             => 'you have new contact messages',
     'show_all'                  => 'Show All',
@@ -2019,5 +2020,14 @@ return [
     "hotline"=>"hotline",
     "thanks_suc"=>"Thank for your message.
     We will contact you soon",
+    "packages"=>"packages",
+    "package"=>"package",
+    "is_discount"=>"is discount",
+    "price_after_discount"=>"price after discount",
+    "movies"=>"movies",
+    "movie"=>"movie",
+    "package_id"=>"sort of package",
+    "movie_add"=>"add movie",
+    "SnapChat"=>"SnapChat"
     
 ];

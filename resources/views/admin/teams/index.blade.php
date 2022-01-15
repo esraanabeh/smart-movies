@@ -65,10 +65,7 @@ if ($lang == "ar") {
                         <thead>
                             <tr>
                                 <th class="{{$text}}">#</th>
-                                <th class="{{$text}}">{{trans('admin.ar_name')}}</th>
-                                <th class="{{$text}}">{{trans('admin.en_name')}}</th>
-                                <th class="{{$text}}">{{trans('admin.ar_title')}}</th>
-                                <th class="{{$text}}">{{trans('admin.en_title')}}</th>
+                                <th class="{{$text}}">{{trans('admin.name')}}</th>
                                 <th class="{{$text}}">{{trans('admin.image')}}</th>
                                 <th class="{{$text}}">{{trans('admin.edit')}}</th>
                                 <th class="{{$text}}">{{trans('admin.delete')}}</th>
@@ -81,10 +78,8 @@ if ($lang == "ar") {
                             @foreach($teams as $team)
                             <tr>
                                 <td>{{$i}}</td>
-                                <td>{{$team['ar_name']}}</td>
-                                <td>{{$team['en_name']}}</td>
-                                <td>{{$team['ar_title']}}</td>
-                                <td>{{$team['en_title']}}</td>
+                                <td>{{$team['name']}}</td>
+                               
                                 <td> <img src="{{URL::to('image/'.$team['image'])}}" style="height: 80px; width: 100px;"/></td>
                                 
                                 <td>
@@ -122,32 +117,5 @@ if ($lang == "ar") {
 
 
 
-<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        {{ Form::open(array('url' =>'admin/delete_all/team', 'method' => 'POST')) }}
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">{{trans('admin.delete_all')}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <select id="ids" name="ids[]" class="form-control select2" multiple="multiple" data-placeholder="{{trans('admin.delete_all')}}" style="width: 100%;" required="">
-                    
-                        
-                   
-                    @foreach($teams as $team)
-                    <option value="{{$team['id']}}">{{$team[$lang.'_name']}}</option>
-                    @endforeach
-                </select>
-            </div>
-            <div class="modal-footer">
-                <button  type="submit" class="btn btn-primary {{$pull}}">{{trans('admin.confrim')}} </button>
-                <button type="button" class="btn btn-danger {{$pulll}}" data-dismiss="modal">{{trans('admin.cancel')}}</button>
-            </div>
-        </div>
-        {{ Form::close() }}
-    </div>
-</div>
+
 @endsection

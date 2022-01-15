@@ -32,12 +32,7 @@ class ContactController extends Controller
     public function index(Request $request)
     {
         //
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بفتح صفحة إتصل بنا';
-        $action->en_action = 'Open contact us page';
-        $action->ip = request()->ip();
-        $action->save();
+    
 
         $contacts = Contact::where(function ($q) use ($request) {
             if($request->status == 'viewed'){
@@ -59,14 +54,7 @@ class ContactController extends Controller
     public function edit($id)
     {
         //
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بفتح  رسالة إتصل بنا رقم ' . $id;
-        $action->en_action = 'Open contact message No. ' . $id;
-        $action->ip = request()->ip();
-        $action->save();
-
-        $contact = $this->contact->getById($id);
+       $contact = $this->contact->getById($id);
         $this->contact->update_seen($id);
         return view('admin.contact.edit', ['contact' => $contact]);
     }
@@ -80,14 +68,7 @@ class ContactController extends Controller
      */
     public function update(UpdateContact $request, $id)
     {
-        
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بالرد علي رسالة إتصل بنا رقم ' . $id;
-        $action->en_action = 'Reply to contact message No. ' . $id;
-        $action->ip = request()->ip();
-        $action->save();
-
+      
         $contact = $this->contact->getById($id);
         $this->contact->edit($id, $request);
         // if ($contact['reply'] != $request['reply']) {
@@ -112,14 +93,8 @@ class ContactController extends Controller
     public function destroy($id)
     {
         //
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بحذف  رسالة إتصل بنا رقم ' . $id;
-        $action->en_action = 'Delete contact message No. ' . $id;
-        $action->ip = request()->ip();
-        $action->save();
-
-        $this->contact->remove($id);
+      
+         $this->contact->remove($id);
         $message = trans('admin.delete_suc');
         return back()->with(['message' => $message]);
     }

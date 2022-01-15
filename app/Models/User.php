@@ -22,32 +22,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'ar_name',
-        'en_name',
-        'logo',
+        'name',
         'password',
         'phone',
         'email',
-        'gender',
-        'birth_date',
         'active',
         'type',
-        'vendor',
         'image_profile',
-        'ar_text',
-        'en_text',
-        'link_vendor_website',
-        'address_vendor',
-        'lat_vendor',
-        'long_vendor',
-        'device_token',
-        'group_id',
-        'deleted_at',
-        'is_home',
-        'name',
-        'new_phone',
-        'lang',
-        'area_id',
+        'password',
+     
     ];
 
     /**
@@ -56,7 +39,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
+      
+        
         'remember_token',
     ];
 
@@ -69,50 +53,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-   
-
-    public function scopeSearch($query, $word)
-    {
-        return $query->where('ar_name', 'Like', '%' . $word . '%')
-            ->orWhere('en_name', 'Like', '%' . $word . '%')
-            ->orWhere('name', 'Like', '%' . $word . '%')
-            ->whereNotNull('name');
-    }
-
-    public function getNameAttribute($name)
-    {
-        $lang_name = app()->getLocale() . '_name';
-        // dd($lang_name , $name , $this->$lang_name);
-        return $name ?? $this->getOriginal($lang_name) ?? __('Unkown');
-    }
-
-    public function scopeStore($query)
-    {
-        return $query->where('type', 'seller')->where('vendor', 'store');
-    }
-
     public function Group()
     {
         return $this->hasOne(Group::class, 'id', 'group_id');
     }
-   
-
-    public function device()
-    {
-        return $this->hasOne(UserDevice::class);
-    }
-
     
-
-
-    
-
-    
-
-   
-   
-
-
     public function getAll($type)
     {
         if ($type == 'user') {
@@ -146,9 +91,8 @@ class User extends Authenticatable
     {
         $user = $this->find($id);
         $user->email = $data['email'];
-         $user->ar_name = $data['ar_name'] ?? '';
-        $user->en_name = $data['en_name'] ?? '';
-        $user->phone = $data['phone'];
+         $user->name = $data['name'] ;
+       
         if ($data['password'] != "") {
             $user->password = Hash::make($data['password']);
         }
@@ -166,9 +110,6 @@ class User extends Authenticatable
         $user = $this->find($id);
         $user->email = $data['email'];
         $user->name = $data['name'] ?? '';
-        $user->ar_name = $data['ar_name'] ?? '';
-        $user->en_name = $data['en_name'] ?? '';
-        $user->phone = $data['phone'];
         $user->gender = $data['gender'];
         $user->birth_date = $data['birth_date'];
         if ($data['password'] != "") {
@@ -187,7 +128,7 @@ class User extends Authenticatable
     {
         $user = $this->find($id);
         $user->active = 'delete';
-        $user->deleted_at = now();
+      //  $user->deleted_at = now();
         return $user->save();
     }
 
@@ -198,10 +139,6 @@ class User extends Authenticatable
         return $user->save();
     }
 
-    public function code()
-    {
-        return $this->hasOne(UserCode::class, 'user_id');
-    }
 
     public function getStatusAttribute()
     {
@@ -215,32 +152,6 @@ class User extends Authenticatable
         return 1;
     }
 
-    public function notifications()
-    {
-        return $this->hasMany(Notification::class);
-    }
-
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
-
-    /**
-     * Return a key value array, containing any custom claims to be added to the JWT.
-     *
-     * @return array
-     */
-    public function getJWTCustomClaims()
-    {
-        return [];
-    }
     
-
-   
-
-    public function searches()
-    {
-        return $this->hasMany(recentSearch::class);
-    }
 
 }

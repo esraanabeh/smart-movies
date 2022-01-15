@@ -25,13 +25,9 @@ class UpdateSite extends FormRequest {
         return [
             "ar_title" => "required",
             "en_title" => "required",
-            "ar_desc" => "required",
-            "en_desc" => "required",
-            "whatsapp" => "required",
-            "phone" => "required",
-           
+            "package_text" => "required",
+            "footer_text" => "required",
             "email" => "required|email",
-            "location" => "required|url|unique:site,location,$id",
             
         ];
     }

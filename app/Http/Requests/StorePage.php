@@ -23,11 +23,9 @@ class StorePage extends FormRequest {
     public function rules() {
         return [
             //
-            "ar_title" => "required",
-            "en_title" => "required",
-            "ar_desc" => "required",
-            "en_desc" => "required",
-            "image"=>"required",
+            "title" => "required",
+            "content" => "required",
+            
         ];
     }
 

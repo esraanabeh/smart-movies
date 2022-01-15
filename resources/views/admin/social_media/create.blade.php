@@ -78,18 +78,7 @@
                             </div>
 
 
-                            <div class="form-group row">
-                                <label for="file" class="col-sm-3 col-form-label">{{trans('admin.image')}}
-                                    <span dir="ltr">(Width: 46px * Height:38px)</span></label>
-                                <div class="col-sm-9 custom-file" style="height: auto">
-                                    <input type="file" name="image" class="form-control" onchange="previewFile(this)">
-
-                                    <img id="previewImg" alt="image" style="max-width:130px;margin-top:20px;">
-                                    @if($errors->has('image'))
-                                        <div class="alert alert-danger">{{$errors->first('image')}}</div>
-                                    @endif
-                                </div>
-                            </div>
+                        
 
                         </div>
                     </div>

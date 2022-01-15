@@ -1,8 +1,8 @@
 <?php
 use App\Models\SocialMedia;
-use App\Models\Site;
+use App\Models\Setting;
 $social_media=SocialMedia::get();
-$site = Site::find(1);
+$site = Setting::find(1);
 ?>
 @extends('site.layouts.app')
 

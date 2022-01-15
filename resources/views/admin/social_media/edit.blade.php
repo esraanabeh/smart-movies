@@ -79,17 +79,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <label for="file" class="col-sm-3 col-form-label">{{ trans('admin.image') }}
-                                    <span dir="ltr"></span></label>
-                                <div class="col-sm-9 custom-file" style="height: auto">
-                                    <input type="file" name="image" class="form-control" onchange="previewFile(this)">
-
-                                    <img src="{{ $social_media['image'] }}" id="previewImg" alt="image"
-                                        style="max-width:130px;margin-top:20px;">
-
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="box-footer">

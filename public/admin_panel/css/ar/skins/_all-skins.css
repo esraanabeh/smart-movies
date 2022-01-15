@@ -20,7 +20,7 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
 /*---Skin: Blue---*/
 
 .skin-blue .main-header .navbar {
-  background-color: #BA9B64;
+  background-color: #6c757d;
 }
 .skin-blue .main-header .navbar .nav > li > a {
   color: #EDECE9;
@@ -40,7 +40,7 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
   color: #EDECE9;
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-  color: #BA9B64;
+  color: #6c757d;
   background: rgba(0, 0, 0, 0.1);
 }
 .skin-blue .main-header .navbar .sidebar-toggle {
@@ -62,12 +62,12 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
   }
 }
 .skin-blue .main-header .logo {
-  background-color: #BA9B64;
+  background-color: #6c757d;
   color: #1d1c1b;
   border-bottom: 0 solid transparent;
 }
 .skin-blue .main-header .logo:hover {
-  color: #BA9B64;
+  color: #6c757d;
   background-color:#111110;
 }
 .skin-blue .main-header li.user-header {
@@ -82,7 +82,7 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
-  background-color: #BA9B64;
+  background-color: #6c757d;
   box-shadow: 1px 0px 20px rgba(0,0,0,0.08);
 }
 .skin-blue .user-panel > .info,
@@ -100,15 +100,15 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
 .skin-blue .sidebar-menu > li:hover > a,
 .skin-blue .sidebar-menu > li.active > a,
 .skin-blue .sidebar-menu > li.menu-open > a {
-  color: #BA9B64;
+  color: #6c757d;
   background: #0f0f0f;
 }
 .skin-blue .sidebar-menu > li.active > a {
-  border-left-color:#BA9B64;
+  border-left-color:#6c757d;
 }
 .skin-blue .sidebar-menu > li > .treeview-menu {
   margin: 0 0px;
-  background: #BA9B64;
+  background: #6c757d;
 }
 .skin-blue .sidebar a {
   color: #111110;
@@ -121,7 +121,7 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
 }
 .skin-blue .sidebar-menu .treeview-menu > li.active > a,
 .skin-blue .sidebar-menu .treeview-menu > li > a:hover {
-  color: #BA9B64;
+  color: #6c757d;
   background: #0c0c0c;
 }
 .skin-blue .sidebar-form {
@@ -154,12 +154,12 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
   border-bottom-left-radius: 0;
 }
 .skin-blue.layout-top-nav .main-header > .logo {
-  background-color: #BA9B64;
+  background-color: #6c757d;
   color: #EDECE9;
   border-bottom: 0 solid transparent;
 }
 .skin-blue.layout-top-nav .main-header > .logo:hover {
-  background-color: #BA9B64;
+  background-color: #6c757d;
 }
 .skin-blue .btn-blue{
 	background-color: #2cabe3;
@@ -171,7 +171,7 @@ Primary use:	Tsawaaq Admin - Responsive Admin Template
 	color: #2cabe3;
 }
 .horizontal-menu .skin-blue.layout-top-nav .sidebar-menu > li.active > a {
-    background: #BA9B64;
+    background: #6c757d;
 	color: #EDECE9;
 }
 

@@ -23,22 +23,12 @@ class StoreContact extends FormRequest {
     public function rules() {
         return [
             //
-            "name" => "required",
-            // "phone" => "required",
-            "email" => "required|email",
-            "message" => "required",
-            'g-recaptcha-response' => 'required|captcha'
+           
+            // "message" => "required",
+            
               
         ];
     }
-    public function messages()
-    {
-        return [
-            'name.required' => __('name Required'),
-            'email.required' => __('email Required'),
-            'message.required' => __('message Required'),
-            'g-recaptcha-response.required' => __('g-recaptcha-response Required'),
-        ];
-    }
+   
 
 }

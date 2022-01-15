@@ -29,12 +29,6 @@ class PageController extends Controller {
      */
     public function index() {
         //
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بفتح صفحة صفحات الموقع';
-        $action->en_action = 'Open website pages';
-        $action->ip = request()->ip();
-        $action->save();
 
         $pages = $this->page->getAll();
         return view('admin.pages.index', ['pages' => $pages]);
@@ -71,30 +65,13 @@ class PageController extends Controller {
 
         }
         $page = new Page();
-        $type = $request->type;
-        $page->type = $type;
-
-        $ar_title = $request->ar_title;
-        $page->ar_title = $ar_title;
-
-        $en_title = $request->en_title;
-        $page->en_title = $en_title;
-
-        $ar_desc = $request->ar_desc;
-        $page->ar_desc = $ar_desc;
-
-        $en_desc = $request->en_desc;
-        $page->en_desc = $en_desc;
-
-        $page->image = $imageName;
+        $page->type = $request->type;
+        $page->title = $request->title;
+        $page->content = $request->content;
+       
         $page->save();
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بإضافة صفحة جديدة ' . $request['ar_title'];
-        $action->en_action = 'Add new page ' . $request['en_title'];
-        $action->ip = request()->ip();
-        $action->save();
+    
 
         $message = trans('admin.add_suc');
         return back()->with(['message' => $message]);
@@ -132,37 +109,12 @@ class PageController extends Controller {
     public function update(UpdatePage $request, $id) {
         //
         $this->page->edit($id, $request);
-        $imageName = "";
         $page = Page::findOrFail($id);
-        if ($request->hasFile('image')) {
-
-            $imageName = time() . '.' . $request->image->extension();
-
-            $request->image->move(public_path('image'), $imageName);
-
-            $image = $request->file('image');
-            $page->image = $imageName;
-        }
-
        
         $page->type =  $request->type;
-
-        $page->ar_title = $request->ar_title;
-
-        $page->en_title = $request->en_title;
-
-        $page->en_desc = $request->en_desc;
-       
-        $page->ar_desc = $request->ar_desc;
-
+        $page->title = $request->title;
+        $page->content = $request->content;
         $page->save();
-
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بتعديل  صفحة حالية ' . $request['ar_title'];
-        $action->en_action = 'Edit current page ' . $request['en_title'];
-        $action->ip = request()->ip();
-        $action->save();
 
         $message = trans('admin.edit_suc');
         return redirect('admin/pages')->with(['message' => $message]);
@@ -178,13 +130,6 @@ class PageController extends Controller {
         //
         $page = $this->page->getById($id);
         $this->page->remove($id);
-
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بحذف صفحة حالية ' . $page['ar_title'];
-        $action->en_action = 'Delete current page ' . $page['en_title'];
-        $action->ip = request()->ip();
-        $action->save();
 
         $message = trans('admin.delete_suc');
         return back()->with(['message' => $message]);

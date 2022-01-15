@@ -24,7 +24,7 @@ class StoreSocial extends FormRequest
     public function rules()
     {
         return [
-            "image" => "required|mimes:jpeg,jpg,png,bmp,gif,svg",
+            "type" => "required",
             'link'  => 'required|url'
         ];
     }

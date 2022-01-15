@@ -162,36 +162,7 @@ if ($lang == "ar") {
                                         </label> 
                                     </tr>
 
-                                    <tr class="pagetr">
-                                        <td class="gray_check" rel="check_photo" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_photo_value">
-                                            {{trans('admin.photo')}}
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_all',false,['id'=>'photo_all','class'=>'check_photo']) }}
-                                                <label for="photo_all" style="height: 10px;"></label>
-                                            </label> 
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_add',false,['id'=>'photo_add','class'=>'check_photo']) }}
-                                                <label for="photo_add" style="height: 10px;"></label>
-                                            </label> 
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_edit',false,['id'=>'photo_edit','class'=>'check_photo']) }}
-                                                <label for="photo_edit" style="height: 10px;"></label>
-                                            </label> 
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_delete',false,['id'=>'photo_delete','class'=>'check_photo']) }}
-                                                <label for="photo_delete" style="height: 10px;"></label>
-                                            </label> 
-                                        </tr>
+                                 
 
                                        
                                 <tr class="pagetr">
@@ -342,102 +313,73 @@ if ($lang == "ar") {
                                 </tr>
 
                                 <tr class="pagetr">
-                                    <td class="gray_check" rel="check_clients" style="cursor: pointer;">
-                                        <input type="checkbox" class="hidden" id="check_clients_value">
-                                        {{trans('admin.clients')}}
+                                    <td class="gray_check" rel="check_packages" style="cursor: pointer;">
+                                        <input type="checkbox" class="hidden" id="check_packages_value">
+                                        {{trans('admin.packages')}}
                                     </td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'clients_all',false,['id'=>'clients_all','class'=>'check_clients']) }}
-                                            <label for="clients_all" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'packages_all',false,['id'=>'packages_all','class'=>'check_packages']) }}
+                                            <label for="packages_all" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'clients_add',false,['id'=>'clients_add','class'=>'check_clients']) }}
-                                            <label for="clients_add" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'packages_add',false,['id'=>'packages_add','class'=>'check_packages']) }}
+                                            <label for="packages_add" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'clients_edit',false,['id'=>'clients_edit','class'=>'check_clients']) }}
-                                            <label for="clients_edit" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'packages_edit',false,['id'=>'packages_edit','class'=>'check_packages']) }}
+                                            <label for="packages_edit" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                     <td></td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'clients_delete',false,['id'=>'clients_delete','class'=>'check_clients']) }}
-                                            <label for="clients_delete" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'packages_delete',false,['id'=>'packages_delete','class'=>'check_packages']) }}
+                                            <label for="packages_delete" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                 </tr>
+
+                                
                                 <tr class="pagetr">
-                                    <td class="gray_check" rel="check_consultant" style="cursor: pointer;">
-                                        <input type="checkbox" class="hidden" id="check_consultant_value">
-                                        {{trans('admin.consultant')}}
+                                    <td class="gray_check" rel="check_movies" style="cursor: pointer;">
+                                        <input type="checkbox" class="hidden" id="check_movies_value">
+                                        {{trans('admin.movies')}}
                                     </td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'consultant_all',false,['id'=>'consultant_all','class'=>'check_consultant']) }}
-                                            <label for="consultant_all" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'movies_all',false,['id'=>'movies_all','class'=>'check_movies']) }}
+                                            <label for="movies_all" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'consultant_add',false,['id'=>'consultant_add','class'=>'check_consultant']) }}
-                                            <label for="consultant_add" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'movies_add',false,['id'=>'movies_add','class'=>'check_movies']) }}
+                                            <label for="movies_add" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'consultant_edit',false,['id'=>'consultant_edit','class'=>'check_consultant']) }}
-                                            <label for="consultant_edit" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'movies_edit',false,['id'=>'movies_edit','class'=>'check_movies']) }}
+                                            <label for="movies_edit" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                     <td></td>
                                     <td>
                                         <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'consultant_delete',false,['id'=>'consultant_delete','class'=>'check_consultant']) }}
-                                            <label for="consultant_delete" style="height: 10px;"></label>
+                                            {{ Form::checkbox('permissions[]', 'movies_delete',false,['id'=>'movies_delete','class'=>'check_movies']) }}
+                                            <label for="movies_delete" style="height: 10px;"></label>
                                         </label>
                                     </td>
                                 </tr>
                                
-
                                
 
-                                <tr class="pagetr">
-                                    <td class="gray_check" rel="check_slider" style="cursor: pointer;">
-                                        <input type="checkbox" class="hidden" id="check_slider_value">
-                                        {{trans('admin.slider')}}
-                                    </td>
-                                    <td>
-                                        <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'slider_all',false,['id'=>'slider_all','class'=>'check_slider']) }}
-                                            <label for="slider_all" style="height: 10px;"></label>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'slider_add',false,['id'=>'slider_add','class'=>'check_slider']) }}
-                                            <label for="slider_add" style="height: 10px;"></label>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'slider_edit',false,['id'=>'slider_edit','class'=>'check_slider']) }}
-                                            <label for="slider_edit" style="height: 10px;"></label>
-                                        </label>
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                            {{ Form::checkbox('permissions[]', 'slider_delete',false,['id'=>'slider_delete','class'=>'check_slider']) }}
-                                            <label for="slider_delete" style="height: 10px;"></label>
-                                        </label>
-                                    </td>
-                                </tr>
+                                
 
                                 <tr class="pagetr">
                                     <td class="gray_check" rel="check_pages" style="cursor: pointer;">

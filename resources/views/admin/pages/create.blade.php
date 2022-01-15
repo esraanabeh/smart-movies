@@ -51,24 +51,15 @@ if ($lang == "ar") {
                         @endif
 
                         <div class="form-group row">
-                            <label for="ar_title" class="col-sm-3 col-form-label">{{trans('admin.page_title_ar')}}</label>
+                            <label for="title" class="col-sm-3 col-form-label">{{trans('admin.title')}}</label>
                             <div class="col-sm-9">
-                                {{ Form::text('ar_title', null, ['class'=>'form-control','id'=>'ar_title']) }}
-                                @if($errors->has('ar_title'))
-                                <div class="alert alert-danger">{{$errors->first('ar_title')}}</div>
+                                {{ Form::text('title', null, ['class'=>'form-control','id'=>'title']) }}
+                                @if($errors->has('title'))
+                                <div class="alert alert-danger">{{$errors->first('title')}}</div>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="en_title" class="col-sm-3 col-form-label">{{trans('admin.page_title_en')}}</label>
-                            <div class="col-sm-9">
-                                {{ Form::text('en_title', null, ['class'=>'form-control','id'=>'en_title']) }}
-                                @if($errors->has('en_title'))
-                                <div class="alert alert-danger">{{$errors->first('en_title')}}</div>
-                                @endif
-                            </div>
-                        </div>
 
                         <div class="form-group row">
                             <label for="type" class="col-sm-3 col-form-label">@lang('Page type')</label>
@@ -84,38 +75,19 @@ if ($lang == "ar") {
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-3 col-form-label">{{trans('admin.image')}}
-                                <span dir="ltr">(Width: 46px * Height:38px)</span></label>
-                            <div class="col-sm-9 custom-file" style="height: auto">
-                                <input type="file" name="image" class="form-control" onchange="previewFile(this)">
-
-                                {{-- <img id="previewImg" alt="image" style="max-width:130px;margin-top:20px;"> --}}
-                                @if($errors->has('image'))
-                                    <div class="alert alert-danger">{{$errors->first('image')}}</div>
-                                @endif
-                            </div>
-                        </div>
+                      
 
                         <div class="form-group row">
-                            <label for="editor1" class="col-sm-3 col-form-label">{{trans('admin.page_desc_ar')}}</label>
+                            <label for="editor1" class="col-sm-3 col-form-label">{{trans('admin.content')}}</label>
                             <div class="col-sm-9">
-                                {{ Form::textarea('ar_desc', null, ['class'=>'form-control','id'=>'editor1','rows'=>10]) }}
-                                @if($errors->has('ar_desc'))
-                                <div class="alert alert-danger">{{$errors->first('ar_desc')}}</div>
+                                {{ Form::textarea('content', null, ['class'=>'form-control','id'=>'editor1','rows'=>10]) }}
+                                @if($errors->has('content'))
+                                <div class="alert alert-danger">{{$errors->first('content')}}</div>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="editor2" class="col-sm-3 col-form-label">{{trans('admin.page_desc_en')}}</label>
-                            <div class="col-sm-9">
-                                {{ Form::textarea('en_desc', null, ['class'=>'form-control','id'=>'editor2','rows'=>10]) }}
-                                @if($errors->has('en_desc'))
-                                <div class="alert alert-danger">{{$errors->first('en_desc')}}</div>
-                                @endif
-                            </div>
-                        </div>
+                     
                     </div>
                 </div>
             </div>

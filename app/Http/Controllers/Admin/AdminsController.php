@@ -28,12 +28,7 @@ class AdminsController extends Controller {
      */
     public function index() {
         //
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بفتح صفحة المشرفين';
-        $action->en_action = 'Open supervisors page';
-        $action->ip = request()->ip();
-        $action->save();
+       
 
         $admins = User::where(['type'=>'admin'])->latest()->get();
         return view('admin.admins.index', ['admins' => $admins]);
@@ -65,12 +60,7 @@ class AdminsController extends Controller {
         $request['active'] = 'no';
         $this->user->add($request);
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بإضافة مشرف جديد ' . $request['first_name'] . ' ' . $request['last_name'];
-        $action->en_action = 'Add new supervisor ' . $request['first_name'] . ' ' . $request['last_name'];
-        $action->ip = request()->ip();
-        $action->save();
+      
 
         $message = trans('admin.add_suc');
         return back()->with(['message' => $message]);
@@ -114,13 +104,7 @@ class AdminsController extends Controller {
         //
         $this->user->edit($id, $request);
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بتعديل مشرف حالي ' . $request['ar_name'] ;
-        $action->en_action = 'Edit current supervisor ' . $request['ar_name'] ;
-        $action->ip = request()->ip();
-        $action->save();
-
+   
         $message = trans('admin.edit_suc');
         return redirect('admin/admins')->with(['message' => $message]);
     }
@@ -135,12 +119,7 @@ class AdminsController extends Controller {
 
         $admin = User::find($id);
         $admin->delete();
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بحذف مشرف حالي ' . $admin['ar_name'] ;
-        $action->en_action = 'Delete current supervisor ' . $admin['en_name'] ;
-        $action->ip = request()->ip();
-        $action->save();
+      
 
         $message = trans('admin.delete_suc');
         return back()->with(['message' => $message]);

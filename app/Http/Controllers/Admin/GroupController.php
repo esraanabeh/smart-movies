@@ -28,13 +28,7 @@ class GroupController extends Controller {
      */
     public function index() {
         //
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بفتح صفحة صلاحيات المشرفين';
-        $action->en_action = 'Open supervisors powers page';
-        $action->ip = request()->ip();
-        $action->save();
-
+      
         $groups = $this->group->where('type','admin')->get();
         return view('admin.groups.index', ['groups' => $groups]);
     }
@@ -66,12 +60,7 @@ class GroupController extends Controller {
             }
         }
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بإضافة مجموعة صلاحيات مشرفين جديدة '.$request['ar_name'];
-        $action->en_action = 'Add new supervisors powers group '.$request['en_name'];
-        $action->ip = request()->ip();
-        $action->save();
+        
 
         $message = trans('admin.add_suc');
         return back()->with(['message' => $message]);
@@ -117,12 +106,7 @@ class GroupController extends Controller {
             }
         }
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بتعديل  مجموعة صلاحيات مشرفين حالية '.$request['ar_name'];
-        $action->en_action = 'Edit current supervisors powers group '.$request['en_name'];
-        $action->ip = request()->ip();
-        $action->save();
+     
 
         $message = trans('admin.edit_suc');
         return redirect('admin/groups')->with(['message' => $message]);
@@ -140,12 +124,6 @@ class GroupController extends Controller {
         $this->group->remove($id);
         $this->permission->delByGroup($id);
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بحذف مجموعة صلاحيات مشرفين حالية '.$group['ar_name'];
-        $action->en_action = 'Delete current supervisors powers group '.$group['en_name'];
-        $action->ip = request()->ip();
-        $action->save();
 
         $message = trans('admin.delete_suc');
         return back()->with(['message' => $message]);

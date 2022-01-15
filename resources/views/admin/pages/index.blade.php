@@ -61,9 +61,8 @@ if ($lang == "ar") {
                         <thead>
                             <tr>
                                 <th class="{{$text}}">#</th>
-                                <th class="{{$text}}">{{trans('admin.page_title_ar')}}</th>
-                                <th class="{{$text}}">{{trans('admin.page_title_en')}}</th>
-                                <th class="{{$text}}">{{trans('admin.image')}}</th>
+                                <th class="{{$text}}">{{trans('admin.title')}}</th>
+                                <th class="{{$text}}">{{trans('admin.content')}}</th>
                                 <th class="{{$text}}">{{trans('admin.edit')}}</th>
                                 <th class="{{$text}}">{{trans('admin.delete')}}</th>
                             </tr>
@@ -73,9 +72,8 @@ if ($lang == "ar") {
                             @foreach($pages as $page)
                             <tr>
                                 <td>{{$i}}</td>
-                                <td>{{$page['ar_title']}}</td>
-                                <td>{{$page['en_title']}}</td>
-                                <td> <img src="{{URL::to('image/'.$page['image'])}}" style="height: 80px; width: 100px;"/></td>
+                                <td>{{$page['title']}}</td>
+                                <td>{{$page['content']}}</td>
                                 
                                 <td>
                                     {{ Form::open(array('url' =>'admin/pages/'.$page->id.'/edit', 'method' => 'GET')) }}

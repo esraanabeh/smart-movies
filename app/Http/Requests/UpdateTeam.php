@@ -25,12 +25,8 @@ class UpdateTeam extends FormRequest
     {
         return [
             //
-            "ar_name" => "required",
-            "en_name" => "required",
-            "ar_title" => "required",
-            "en_title" => "required",
-            "ar_details" => "required",
-            "en_details" => "required",
+            "name" => "required",
+          
             "image"=>"mimes:jpeg,jpg,png,bmp,gif,svg",
         ];
     }

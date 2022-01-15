@@ -8,17 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Team extends Model
 {
     use HasFactory;
-    protected $table = 'teams';
-    protected $fillable = [
-     'ar_name',
-     'en_name',
-     'ar_title',
-     'en_title',
-     'ar_details',
-     'en_details',
-      'image'
-    ];
-
+    protected $fillable = ['name','image'];
 
     public function getAll() {
         return $this->all();

@@ -17,23 +17,17 @@ function admin_permissions()
      
         'social_media' => ['all', 'add', 'edit', 'delete'],
         
-        'log' => ['all'],
-        'notifications' => ['all'],
+        
         'groups' => ['all', 'add', 'edit', 'delete'],
         'admins' => ['all', 'add', 'edit', 'delete'],
         'users' => ['all', 'add', 'edit', 'delete'],
-        'reports' => ['all'],
-        'ads' => ['all', 'add', 'edit', 'delete'],
-        'slider' => ['all', 'add', 'edit', 'delete'],
+        
         'gallery' => ['all', 'add', 'edit', 'delete'],
         'pages' => ['all', 'add', 'edit', 'delete'],
-        'services' => ['all', 'add', 'edit', 'delete'],
-        'clients' => ['all', 'add', 'edit', 'delete'],
+        
         'teams' => ['all', 'add', 'edit', 'delete'],
-        'contact' => ['all'],
-        'consultant' => ['all'],
-        'photo' => ['all', 'add', 'edit', 'delete'],
-        // 'locations' => ['all', 'add', 'edit', 'delete'],
+       
+       
         
     ];
 }
@@ -46,37 +40,6 @@ function sidebar()
 
 
 
-// function api_response($data = null, $message = "", $status = "success", $phoneStatus = null)
-// {
-//     // setTokenLang();
-//     $response = [
-//         'status' => $status ? true : false,
-//         'message' => $message,
-//         'data' => $data,
-//         'phoneStatus' => $phoneStatus,
-//     ];
-//     try {
-//         if ($data) {
-//             $pagination = api_model_set_pagenation($data);
-//             if ($pagination) {
-//                 $response['pagination'] = $pagination;
-//             } else {
-//                 foreach ($data as $key => $row) {
-//                     if (is_string($key)) {
-//                         $pagination = api_model_set_pagenation($row);
-//                         if ($pagination) {
-//                             $response['pagination'] = $pagination;
-//                             break;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     } catch (\Throwable $th) {
-//         //throw $th;
-//     }
-//     return response()->json($response);
-// }
 
 function setTokenLang()
 {
@@ -95,23 +58,7 @@ function setTokenLang()
     }
 }
 
-if (!function_exists('api_model_set_pagenation')) {
 
-    function api_model_set_pagenation($model)
-    {
-        if (is_object($model) && count((array) $model)) {
-            try {
-                $pagnation['total'] = $model->total();
-                $pagnation['lastPage'] = $model->lastPage();
-                $pagnation['perPage'] = $model->perPage();
-                $pagnation['currentPage'] = $model->currentPage();
-                return $pagnation;
-            } catch (\Exception$e) {
-            }
-        }
-        return null;
-    }
-}
 
 function send_sms($phone, $message)
 {
@@ -163,10 +110,10 @@ function page_types()
 {
     return [
         'page',
-        'Welcome To Our Site' => __('Welcome To Our Site'),
-        // 'Who we are?' => __('Who we are?'),
-        'Our mission' =>__('Our mission'),
-        'Chairman message'=>__('Chairman message'),
+        'About Us' => __('About Us'),
+        'Terms Of Privacy' => __('Terms Of Privacy'),
+        'Blogs' =>__('Blogs'),
+        
         
     ];
 }
@@ -197,27 +144,7 @@ function app_setting($key, $default = '')
     return Setting::where('key', $key)->first()->value ?? $default;
 }
 
-function RealIpAddress()
-{
-    // Get real visitor IP behind CloudFlare network
-    if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
-        $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
-        $_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
-    }
-    $client = @$_SERVER['HTTP_CLIENT_IP'];
-    $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
-    $remote = $_SERVER['REMOTE_ADDR'];
 
-    if (filter_var($client, FILTER_VALIDATE_IP)) {
-        $ip = $client;
-    } elseif (filter_var($forward, FILTER_VALIDATE_IP)) {
-        $ip = $forward;
-    } else {
-        $ip = $remote;
-    }
-
-    return $ip;
-}
 
 function send_fcm($tokens, $platfrom, $title, $message, $model = 'general', $model_id = null, $topic = null)
 {
@@ -312,8 +239,8 @@ function social_types()
         'facebook' => __('Facebook'),
         'twitter' => __('Twitter'),
         'instagram' => __('Instagram'),
-        'WhatsApp' => __('WhatsApp'),
-        'Youtube' => __('Youtube'),
+        'SnapChat' => __('SnapChat'),
+        
     ];
 }
 

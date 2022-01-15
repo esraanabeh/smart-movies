@@ -22,22 +22,7 @@ $menu = [
         'icon'  => 'fa-globe',
         'role'  => 'site_role'
     ],
-    // 'locations' => [
-    //     'title' => trans('admin.locations'),
-    //     'url' => '#',
-    //     'icon' => 'fa-files-o',
-    //     'role' => 'locations_role',
-    //     'childs' => [
-    //         [
-    //             'title' => trans('admin.show_all'),
-    //             'url'   => url('admin/locations')
-    //         ],
-    //         [
-    //             'title' => trans('admin.page_add'),
-    //             'url'   => url('admin/locations/create')
-    //         ],
-    //     ]
-    // ],
+  
     
     'social_media'    => [
         'title' => trans('admin.social_media'),
@@ -56,12 +41,7 @@ $menu = [
         ]
 
     ],
-    'log'             => [
-        'title' => trans('admin.log'),
-        'url'   => url('admin/log'),
-        'icon'  => 'fa-tasks',
-        'role'  => 'log_role'
-    ],
+    
    
     'spliter'         => 'Draw spliter here',
     'groups'          => [
@@ -99,40 +79,42 @@ $menu = [
     
    
     'spliter'         => 'Draw spliter here',
-    'services' => [
-        'title' => trans('admin.services'),
-        'url' => '#',
-        'icon' => 'fa-th-large',
-        'role' => 'services_role',
-        'childs' => [
-            [
-                'title' => trans('admin.show_all'),
-                'url'   => url('admin/services')
-            ],
-            [
-                'title' => trans('admin.service_add'),
-                'url'   => url('admin/services/create')
-            ],
-        ]
-    ],
 
-
-    'clients' => [
-        'title' => trans('admin.clients'),
+    'movies' => [
+        'title' => trans('admin.movie'),
         'url' => '#',
         'icon' => 'fa-user',
-        'role' => 'clients_role',
+        'role' => 'movies_role',
         'childs' => [
             [
                 'title' => trans('admin.show_all'),
-                'url'   => url('admin/clients')
+                'url'   => url('admin/movies')
             ],
             [
-                'title' => trans('admin.client_add'),
-                'url'   => url('admin/clients/create')
+                'title' => trans('admin.member_add'),
+                'url'   => url('admin/movies/create')
             ],
         ]
     ],
+   
+    'packages' => [
+        'title' => trans('admin.package'),
+        'url' => '#',
+        'icon' => 'fa-user',
+        'role' => 'packages_role',
+        'childs' => [
+            [
+                'title' => trans('admin.show_all'),
+                'url'   => url('admin/packages')
+            ],
+            [
+                'title' => trans('admin.member_add'),
+                'url'   => url('admin/packages/create')
+            ],
+        ]
+    ],
+
+  
 
     'teams' => [
         'title' => trans('admin.Our_Team'),
@@ -155,56 +137,11 @@ $menu = [
     
     'spliter'         => 'Draw spliter here',
 
-    'gallery' => [
-        'title' => trans('admin.videos'),
-        'url' => '#',
-        'icon' => 'fa-bar-chart',
-        'role' => 'gallery_role',
-        'childs' => [
-            [
-                'title' => trans('admin.show_all'),
-                'url'   => url('admin/gallery')
-            ],
-            [
-                'title' => trans('admin.gallery_add'),
-                'url'   => url('admin/gallery/create')
-            ],
-        ]
-    ],
+    
 
-    'photo' => [
-        'title' => trans('admin.photo'),
-        'url' => '#',
-        'icon' => 'fa-bar-chart',
-        'role' => 'photo_role',
-        'childs' => [
-            [
-                'title' => trans('admin.show_all'),
-                'url'   => url('admin/photo')
-            ],
-            [
-                'title' => trans('admin.photo_add'),
-                'url'   => url('admin/photo/create')
-            ],
-        ]
-    ],
+    
   
-    'slider' => [
-        'title' => trans('admin.slider'),
-        'url' => '#',
-        'icon' => 'fa-bar-chart',
-        'role' => 'slider_role',
-        'childs' => [
-            [
-                'title' => trans('admin.show_all'),
-                'url'   => url('admin/slider')
-            ],
-            [
-                'title' => trans('admin.slider_add'),
-                'url'   => url('admin/slider/create')
-            ],
-        ]
-    ],
+   
     'pages' => [
         'title' => trans('admin.pages'),
         'url' => '#',

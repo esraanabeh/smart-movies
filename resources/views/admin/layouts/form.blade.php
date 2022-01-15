@@ -9,7 +9,7 @@ if ($lang == "ar") {
     $arrow = "left";
     $pull = "pull-right";
 }
-$site = App\Models\Site::first();
+$site = App\Models\Setting::first();
 ?>
 <html lang="{{$lang}}">
     <head>
@@ -19,17 +19,17 @@ $site = App\Models\Site::first();
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <link rel="icon" href="{{ url('favicon/logo.png') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url('favicon/logo.png') }}">
+        <link rel="icon" href="{{ url('favicon/logo-m.png') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url('favicon/logo-m.png') }}">
 
-        <meta property="og:title" content="{{$site[$lang.'_title']}}">
-        <meta property="og:description" content="{{$site[$lang.'_desc']}}">
+        <meta property="og:title" content="{{$site[$lang.'_title'] ?? ''}}">
+        <meta property="og:description" content="{{$site[$lang.'_title'] ?? ''}}">
         <meta property="og:site_name" content="{{url('/')}}">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{url('/')}}">
         <meta property="og:image" content="../og.png">
 
-        <title>{{$site[$lang.'_title']}} - {{trans('admin.admin')}} </title>
+        <title>{{$site[$lang.'_title'] ?? ''}} - {{trans('admin.admin')}} </title>
 
         <!-- Bootstrap 4.0-->
         <link rel="stylesheet" href="{{URL::to('admin_panel')}}/assets/vendor_components/bootstrap/dist/css/bootstrap.min.css">

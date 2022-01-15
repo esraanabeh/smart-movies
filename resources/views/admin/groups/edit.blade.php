@@ -81,7 +81,7 @@
                             </div>
                             <?php
 
-                            $site_edit = $social_media_all = $social_media_edit= $social_media_delete = $social_media_add = $banks_all = $banks_add = $banks_edit = $banks_delete = $log_all = $notifications_all = $notifications_add = $groups_all = $groups_add = $groups_edit = $groups_delete = $admins_all = $admins_add = $admins_edit = $admins_delete = $users_all = $users_add = $users_edit = $users_delete = $reports_all = $ads_all = $ads_add = $ads_edit = $ads_delete = $mall_all = $mall_add = $mall_edit = $mall_delete = $tutorials_all = $tutorials_add = $tutorials_edit = $tutorials_delete = $slider_all = $slider_add = $slider_edit = $slider_delete = $pages_all = $pages_add = $pages_edit = $pages_delete = $contact_all = $contact_edit = $contact_delete = $category_all = $category_add = $category_edit = $category_delete = $product_brand_all = $product_brand_add = $product_brand_edit = $product_brand_delete = $product_type_all = $product_type_add = $product_type_edit = $product_type_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $stors_all = $stors_add = $stors_edit = $stors_delete = $offers_all = $offers_add = $offers_edit = $offers_delete = $product_all = $product_add = $product_edit = $product_delete = $guest_all = $site_edit = $social_media_all = $social_media_edit = $guest_all = $banks_all = $banks_add = $banks_edit = $banks_delete = $log_all = $notifications_all = $notifications_add = $groups_all = $groups_add = $groups_edit = $groups_delete = $admins_all = $admins_add = $admins_edit = $admins_delete = $users_all = $users_add = $users_edit = $users_delete = $reports_all = $ads_all = $ads_add = $ads_edit = $ads_delete = $mall_all = $mall_add = $mall_edit = $mall_delete = $tutorials_all = $tutorials_add = $tutorials_edit = $tutorials_delete = $slider_all = $slider_add = $slider_edit = $slider_delete = $pages_all = $pages_add = $pages_edit = $pages_delete = $contact_all = $contact_edit = $contact_delete = $category_all = $category_add = $category_edit = $category_delete = $product_brand_all = $product_brand_add = $product_brand_edit = $product_brand_delete = $product_type_all = $product_type_add = $product_type_edit = $product_type_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $stors_all = $stors_add = $stors_edit = $stors_delete = $offers_all = $offers_add = $offers_edit = $offers_delete  = $orders_all = $orders_add = $orders_edit = $orders_delete = $areas_all = $areas_add = $areas_edit = $areas_delete = false;
+                             $site_edit = $social_media_all = $social_media_edit= $social_media_delete = $social_media_add = $banks_all = $banks_add = $banks_edit = $banks_delete = $log_all = $notifications_all = $notifications_add = $groups_all = $groups_add = $groups_edit = $groups_delete = $admins_all = $admins_add = $admins_edit = $admins_delete = $users_all = $users_add = $users_edit = $users_delete = $reports_all = $ads_all = $ads_add = $ads_edit = $ads_delete = $mall_all = $mall_add = $mall_edit = $mall_delete = $tutorials_all = $tutorials_add = $tutorials_edit = $tutorials_delete = $slider_all = $slider_add = $slider_edit = $slider_delete = $pages_all = $pages_add = $pages_edit = $pages_delete = $contact_all = $contact_edit = $contact_delete = $category_all = $category_add = $category_edit = $category_delete = $product_brand_all = $product_brand_add = $product_brand_edit = $product_brand_delete = $product_type_all = $product_type_add = $product_type_edit = $product_type_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $stors_all = $stors_add = $stors_edit = $stors_delete = $offers_all = $offers_add = $offers_edit = $offers_delete = $product_all = $product_add = $product_edit = $product_delete = $guest_all = $site_edit = $social_media_all = $social_media_edit = $guest_all = $banks_all = $banks_add = $banks_edit = $banks_delete = $log_all = $notifications_all = $notifications_add = $groups_all = $groups_add = $groups_edit = $groups_delete = $admins_all = $admins_add = $admins_edit = $admins_delete = $users_all = $users_add = $users_edit = $users_delete = $reports_all = $ads_all = $ads_add = $ads_edit = $ads_delete = $mall_all = $mall_add = $mall_edit = $mall_delete = $tutorials_all = $tutorials_add = $tutorials_edit = $tutorials_delete = $slider_all = $slider_add = $slider_edit = $slider_delete = $pages_all = $pages_add = $pages_edit = $pages_delete = $contact_all = $contact_edit = $contact_delete = $category_all = $category_add = $category_edit = $category_delete = $product_brand_all = $product_brand_add = $product_brand_edit = $product_brand_delete = $product_type_all = $product_type_add = $product_type_edit = $product_type_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $stors_all = $stors_add = $stors_edit = $stors_delete = $offers_all = $offers_add = $offers_edit = $offers_delete  = $orders_all = $orders_add = $orders_edit = $orders_delete = $areas_all = $areas_add = $areas_edit = $areas_delete = false;
 
                             $site_edit  = $banks_all = $banks_add = $banks_edit = $banks_delete = $log_all = $notifications_all = $notifications_add = $groups_all = $groups_add = $groups_edit = $groups_delete = $admins_all = $admins_add = $admins_edit = $admins_delete = $users_all = $users_add = $users_edit = $users_delete = $reports_all = $ads_all = $ads_add = $ads_edit = $ads_delete = $mall_all = $mall_add = $mall_edit = $mall_delete = $tutorials_all = $tutorials_add = $tutorials_edit = $tutorials_delete = $slider_all = $slider_add = $slider_edit = $slider_delete = $pages_all = $pages_add = $pages_edit = $pages_delete = $contact_all = $contact_edit = $contact_delete = $category_all = $category_add = $category_edit = $category_delete = $product_brand_all = $product_brand_add = $product_brand_edit = $product_brand_delete = $product_type_all = $product_type_add = $product_type_edit = $product_type_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $stors_all = $stors_add = $stors_edit = $stors_delete = $offers_all = $offers_add = $offers_edit = $offers_delete = $product_all = $product_add = $product_edit = $product_delete = $guest_all = $site_edit = $social_media_all = $social_media_edit = $guest_all = $banks_all = $banks_add = $banks_edit = $banks_delete = $log_all = $notifications_all = $notifications_add = $groups_all = $groups_add = $groups_edit = $groups_delete = $admins_all = $admins_add = $admins_edit = $admins_delete = $users_all = $users_add = $users_edit = $users_delete = $reports_all = $ads_all = $ads_add = $ads_edit = $ads_delete = $mall_all = $mall_add = $mall_edit = $mall_delete = $tutorials_all = $tutorials_add = $tutorials_edit = $tutorials_delete = $slider_all = $slider_add = $slider_edit = $slider_delete = $pages_all = $pages_add = $pages_edit = $pages_delete = $contact_all = $contact_edit = $contact_delete = $category_all = $category_add = $category_edit = $category_delete = $product_brand_all = $product_brand_add = $product_brand_edit = $product_brand_delete = $product_type_all = $product_type_add = $product_type_edit = $product_type_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete = $stors_all = $stors_add = $stors_edit = $stors_delete = $offers_all = $offers_add = $offers_edit = $offers_delete = $orders_all = $orders_add = $orders_edit = $orders_delete = $areas_all = $areas_add = $areas_edit = $areas_delete = false;
 
@@ -100,15 +100,15 @@
                             $sizes_edit = $sizes_delete = $colors_all = $colors_add = $colors_edit = $colors_delete =
                             $photo_all = $photo_add = $photo_edit = $photo_delete = $offers_all = $offers_add = $offers_edit
                                 = $offers_delete = $product_all = $product_add = $product_edit = $product_delete = $guest_all
-                                = $site_edit = $social_media_all = $social_media_edit = $social_media_add = $guest_all = $banks_all = $banks_add
-                                = $banks_edit = $banks_delete = $log_all = $notifications_all = $notifications_add = $groups_all
+                                = $site_edit = $social_media_all = $social_media_edit = $social_media_add = $guest_all = $movies_all = $movies_add
+                                = $movies_edit = $movies_delete = $log_all = $notifications_all = $notifications_add = $groups_all
                                 = $groups_add = $groups_edit = $groups_delete = $admins_all = $admins_add = $admins_edit =
                             $admins_delete = $users_all = $users_add = $users_edit = $users_delete = $reports_all = $ads_all =
                             $ads_add = $ads_edit = $ads_delete = $mall_all = $mall_add = $mall_edit = $mall_delete =
                             $tutorials_all = $tutorials_add = $tutorials_edit = $tutorials_delete = $wishlist_all = $wishlist_delete = $slider_all = $slider_add
                                 = $slider_edit = $slider_delete = $pages_all = $pages_add = $pages_edit = $pages_delete= $locations_all = $locations_add = $locations_edit = $locations_delete =
-                            $contact_all = $contact_edit = $contact_delete = $category_all = $category_add = $category_edit
-                                = $category_delete = $product_brand_all = $product_brand_add = $product_brand_edit =
+                            $contact_all = $contact_edit = $contact_delete = $packages_all = $packages_add = $packages_edit
+                                = $packages_delete = $product_brand_all = $product_brand_add = $product_brand_edit =
                             $product_brand_delete = $product_type_all = $product_type_add = $product_type_edit =
                             $product_type_delete = $sizes_all = $sizes_add = $sizes_edit = $sizes_delete = $colors_all
                                 = $colors_add = $colors_edit = $colors_delete = $sizes_all = $sizes_add = $sizes_edit =
@@ -132,9 +132,7 @@
                                 elseif ($pre['permission'] == 'social_media_delete') {
                                     $social_media_delete = true;
                                 } 
-                                elseif ($pre['permission'] == 'guest_all') {
-                                    $guest_all = true;
-                                } elseif ($pre['permission'] == 'teams_all') {
+                                elseif ($pre['permission'] == 'teams_all') {
                                     $teams_all = true;
                                 } elseif ($pre['permission'] == 'teams_add') {
                                     $teams_add = true;
@@ -142,36 +140,15 @@
                                     $teams_edit = true;
                                 } elseif ($pre['permission'] == 'teams_delete') {
                                     $teams_delete = true;
-                                } elseif ($pre['permission'] == 'product_type_all') {
-                                    $product_type_all = true;
-                                } elseif ($pre['permission'] == 'product_brand_add') {
-                                    $product_brand_add = true;
-                                } elseif ($pre['permission'] == 'product_brand_all') {
-                                    $product_brand_all = true;
-                                    
-                                }elseif ($pre['permission'] == 'product_brand_edit') {
-                                    $product_brand_edit = true;
-                                    
-                                }elseif ($pre['permission'] == 'product_brand_delete') {
-                                    $product_brand_delete = true;
-                                    
-                                }  elseif ($pre['permission'] == 'wishlist_all') {
-                                    $wishlist_all = true;
-                                } elseif ($pre['permission'] == 'wishlist_delete') {
-                                    $wishlist_delete = true;
-                                } elseif ($pre['permission'] == 'product_type_add') {
-                                    $product_type_add = true;
-                                } elseif ($pre['permission'] == 'product_type_edit') {
-                                    $product_type_edit = true;
-                                } elseif ($pre['permission'] == 'product_type_delete') {
-                                    $product_type_delete = true;
-                                } elseif ($pre['permission'] == 'log_all') {
-                                    $log_all = true;
-                                } elseif ($pre['permission'] == 'notifications_all') {
-                                    $notifications_all = true;
-                                } elseif ($pre['permission'] == 'notifications_add') {
-                                    $notifications_add = true;
-                                } elseif ($pre['permission'] == 'groups_all') {
+                                } elseif ($pre['permission'] == 'packages_all') {
+                                    $packages_all = true;
+                                }  elseif ($pre['permission'] == 'packages_add') {
+                                    $packages_add = true;
+                                } elseif ($pre['permission'] == 'packages_edit') {
+                                    $packages_edit = true;
+                                } elseif ($pre['permission'] == 'packages_delete') {
+                                    $packages_delete = true;
+                                }  elseif ($pre['permission'] == 'groups_all') {
                                     $groups_all = true;
                                 } elseif ($pre['permission'] == 'groups_add') {
                                     $groups_add = true;
@@ -179,15 +156,7 @@
                                     $groups_edit = true;
                                 } elseif ($pre['permission'] == 'groups_delete') {
                                     $groups_delete = true;
-                                } elseif ($pre['permission'] == 'photo_all') {
-                                    $photo_all = true;
-                                } elseif ($pre['permission'] == 'photo_add') {
-                                    $photo_add = true;
-                                } elseif ($pre['permission'] == 'photo_edit') {
-                                    $photo_edit = true;
-                                } elseif ($pre['permission'] == 'photo_delete') {
-                                    $photo_delete = true;
-                                } elseif ($pre['permission'] == 'admins_all') {
+                                }  elseif ($pre['permission'] == 'admins_all') {
                                     $admins_all = true;
                                 } elseif ($pre['permission'] == 'admins_add') {
                                     $admins_add = true;
@@ -203,48 +172,6 @@
                                     $users_edit = true;
                                 } elseif ($pre['permission'] == 'users_delete') {
                                     $users_delete = true;
-                                } elseif ($pre['permission'] == 'reports_all') {
-                                    $reports_all = true;
-                                } elseif ($pre['permission'] == 'ads_all') {
-                                    $ads_all = true;
-                                } elseif ($pre['permission'] == 'ads_add') {
-                                    $ads_add = true;
-                                } elseif ($pre['permission'] == 'ads_edit') {
-                                    $ads_edit = true;
-                                } elseif ($pre['permission'] == 'ads_delete') {
-                                    $ads_delete = true;
-                                } elseif ($pre['permission'] == 'mall_all') {
-                                    $mall_all = true;
-                                } elseif ($pre['permission'] == 'mall_add') {
-                                    $mall_add = true;
-                                } elseif ($pre['permission'] == 'mall_edit') {
-                                    $mall_edit = true;
-                                } elseif ($pre['permission'] == 'mall_delete') {
-                                    $mall_delete = true;
-                                } elseif ($pre['permission'] == 'tutorials_all') {
-                                    $tutorials_all = true;
-                                } elseif ($pre['permission'] == 'tutorials_add') {
-                                    $tutorials_add = true;
-                                } elseif ($pre['permission'] == 'tutorials_edit') {
-                                    $tutorials_edit = true;
-                                } elseif ($pre['permission'] == 'tutorials_delete') {
-                                    $tutorials_delete = true;
-                                } elseif ($pre['permission'] == 'slider_all') {
-                                    $slider_all = true;
-                                } elseif ($pre['permission'] == 'slider_add') {
-                                    $slider_add = true;
-                                } elseif ($pre['permission'] == 'slider_edit') {
-                                    $slider_edit = true;
-                                } elseif ($pre['permission'] == 'slider_delete') {
-                                    $slider_delete = true;
-                                }elseif ($pre['permission'] == 'gallery_all') {
-                                    $gallery_all = true;
-                                } elseif ($pre['permission'] == 'gallery_add') {
-                                    $gallery_add = true;
-                                } elseif ($pre['permission'] == 'gallery_edit') {
-                                    $gallery_edit = true;
-                                } elseif ($pre['permission'] == 'gallery_delete') {
-                                    $gallery_delete = true;
                                 } elseif ($pre['permission'] == 'pages_all') {
                                     $pages_all = true;
                                 } elseif ($pre['permission'] == 'pages_add') {
@@ -253,24 +180,7 @@
                                     $pages_edit = true;
                                 } elseif ($pre['permission'] == 'pages_delete') {
                                     $pages_delete = true;
-                                } elseif ($pre['permission'] == 'locations_all') {
-                                    $locations_all = true;
-                                } elseif ($pre['permission'] == 'locations_add') {
-                                    $locations_add = true;
-                                } elseif ($pre['permission'] == 'locations_edit') {
-                                    $locations_edit = true;
-                                } elseif ($pre['permission'] == 'locations_delete') {
-                                    $locations_delete = true;
-                                }   elseif ($pre['permission'] == 'services_all') {
-                                    $services_all = true;
-                                } elseif ($pre['permission'] == 'services_add') {
-                                    $services_add = true;
-                                } elseif ($pre['permission'] == 'services_edit') {
-                                    $services_edit = true;
-                                } elseif ($pre['permission'] == 'services_delete') {
-                                    $services_delete = true;
-                                
-                                } elseif ($pre['permission'] == 'newsletter') {
+                                }  elseif ($pre['permission'] == 'newsletter') {
                                     $newsletter = true;
                                 } elseif ($pre['permission'] == 'contact_all') {
                                     $contact_all = true;
@@ -279,61 +189,16 @@
                                 } elseif ($pre['permission'] == 'contact_delete') {
                                     $contact_delete = true;
                                 } 
-                                elseif ($pre['permission'] == 'consultant_all') {
-                                    $consultant_all = true;
-                                } elseif ($pre['permission'] == 'consultant_edit') {
-                                    $consultant_edit = true;
-                                } elseif ($pre['permission'] == 'consultant_delete') {
-                                    $consultant_delete = true;
-                                } elseif ($pre['permission'] == 'clients_all') {
-                                    $clients_all = true;
-                                } elseif ($pre['permission'] == 'clients_add') {
-                                    $clients_add = true;
-                                } elseif ($pre['permission'] == 'clients_edit') {
-                                    $clients_edit = true;
-                                } elseif ($pre['permission'] == 'clients_delete') {
-                                    $clients_delete = true;
-                                } elseif ($pre['permission'] == 'colors_all') {
-                                    $colors_all = true;
-                                } elseif ($pre['permission'] == 'colors_add') {
-                                    $colors_add = true;
-                                } elseif ($pre['permission'] == 'colors_edit') {
-                                    $colors_edit = true;
-                                } elseif ($pre['permission'] == 'colors_delete') {
-                                    $colors_delete = true;
-                                } elseif ($pre['permission'] == 'stores_all') {
-                                    $stores_all = true;
-                                } elseif ($pre['permission'] == 'stores_add') {
-                                    $stores_add = true;
-                                } elseif ($pre['permission'] == 'stores_edit') {
-                                    $stores_edit = true;
-                                } elseif ($pre['permission'] == 'stores_delete') {
-                                    $stores_delete = true;
-                                } elseif ($pre['permission'] == 'offers_all') {
-                                    $offers_all = true;
-                                } elseif ($pre['permission'] == 'offers_add') {
-                                    $offers_add = true;
-                                } elseif ($pre['permission'] == 'offers_edit') {
-                                    $offers_edit = true;
-                                } elseif ($pre['permission'] == 'offers_delete') {
-                                    $offers_delete = true;
-                                } elseif ($pre['permission'] == 'orders_all') {
-                                    $orders_all = true;
-                                } elseif ($pre['permission'] == 'orders_add') {
-                                    $orders_add = true;
-                                } elseif ($pre['permission'] == 'orders_edit') {
-                                    $orders_edit = true;
-                                } elseif ($pre['permission'] == 'orders_delete') {
-                                    $orders_delete = true;
-                                } elseif ($pre['permission'] == 'areas_all') {
-                                    $areas_all = true;
-                                } elseif ($pre['permission'] == 'areas_add') {
-                                    $areas_add = true;
-                                } elseif ($pre['permission'] == 'areas_edit') {
-                                    $areas_edit = true;
-                                } elseif ($pre['permission'] == 'areas_delete') {
-                                    $areas_delete = true;
-                                }
+                                elseif ($pre['permission'] == 'movies_all') {
+                                    $movies_all = true;
+                                } elseif ($pre['permission'] == 'movies_add') {
+                                    $movies_add = true;
+                                } elseif ($pre['permission'] == 'movies_edit') {
+                                    $movies_edit = true;
+                                } elseif ($pre['permission'] == 'movies_delete') {
+                                    $movies_delete = true;
+                                } 
+                               
                             }
                             ?>
 
@@ -400,35 +265,6 @@
                                     </tr>
 
 
-                                   
-
-                                    
-
-                                    
-
-                                    <tr class="pagetr">
-                                        <td class="gray_check" rel="check_log" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_log_value">
-                                            {{ trans('admin.log') }}
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'log_all', $log_all, ['id' => 'log_all', 'class' => 'check_log']) }}
-                                                <label for="log_all" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-
-                                   
-
-                                    
-
-                                    
-
                                     <tr class="pagetr">
                                         <td class="gray_check" rel="check_groups" style="cursor: pointer;">
                                             <input type="checkbox" class="hidden" id="check_groups_value">
@@ -460,6 +296,7 @@
                                             </label>
                                         </td>
                                     </tr>
+
 
                                     <tr class="pagetr">
                                         <td class="gray_check" rel="check_admins" style="cursor: pointer;">
@@ -495,7 +332,6 @@
 
                                   
 
-
                                     <tr class="pagetr">
                                         <td class="gray_check" rel="check_users" style="cursor: pointer;">
                                             <input type="checkbox" class="hidden" id="check_users_value">
@@ -529,105 +365,6 @@
                                     </tr>
 
                                    
-
-                                  
-                                    
-
-                                    <tr class="pagetr">
-                                        <td class="gray_check" rel="check_slider" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_slider_value">
-                                            {{ trans('admin.slider') }}
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'slider_all', $slider_all, ['id' => 'slider_all', 'class' => 'check_slider']) }}
-                                                <label for="slider_all" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'slider_add', $slider_add, ['id' => 'slider_add', 'class' => 'check_slider']) }}
-                                                <label for="slider_add" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'slider_edit', $slider_edit, ['id' => 'slider_edit', 'class' => 'check_slider']) }}
-                                                <label for="slider_edit" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'slider_delete', $slider_delete, ['id' => 'slider_delete', 'class' => 'check_slider']) }}
-                                                <label for="slider_delete" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr class="pagetr">
-                                        <td class="gray_check" rel="check_gallery" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_gallery_value">
-                                            {{ trans('admin.gallery') }}
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'gallery_all', $gallery_all, ['id' => 'gallery_all', 'class' => 'check_gallery']) }}
-                                                <label for="gallery_all" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'gallery_add', $gallery_add, ['id' => 'gallery_add', 'class' => 'check_gallery']) }}
-                                                <label for="gallery_add" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'gallery_edit', $gallery_edit, ['id' => 'gallery_edit', 'class' => 'check_gallery']) }}
-                                                <label for="gallery_edit" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'gallery_delete', $gallery_delete, ['id' => 'gallery_delete', 'class' => 'check_gallery']) }}
-                                                <label for="gallery_delete" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="pagetr">
-                                        <td class="gray_check" rel="check_photo" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_photo_value">
-                                            {{ trans('admin.photo') }}
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_all', $photo_all, ['id' => 'photo_all', 'class' => 'check_photo']) }}
-                                                <label for="photo_all" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_add', $photo_add, ['id' => 'photo_add', 'class' => 'check_photo']) }}
-                                                <label for="photo_add" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_edit', $photo_edit, ['id' => 'photo_edit', 'class' => 'check_photo']) }}
-                                                <label for="photo_edit" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'photo_delete', $photo_delete, ['id' => 'photo_delete', 'class' => 'check_photo']) }}
-                                                <label for="photo_delete" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                    </tr>
-
                                     <tr class="pagetr">
                                         <td class="gray_check" rel="check_pages" style="cursor: pointer;">
                                             <input type="checkbox" class="hidden" id="check_pages_value">
@@ -660,40 +397,7 @@
                                         </td>
                                     </tr>
 
-                                    
-
-                                    <tr class="pagetr">
-                                        <td class="gray_check" rel="check_services" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_services_value">
-                                            {{ trans('admin.services') }}
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'services_all', $services_all, ['id' => 'services_all', 'class' => 'check_services']) }}
-                                                <label for="services_all" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'services_add', $services_add, ['id' => 'services_add', 'class' => 'check_services']) }}
-                                                <label for="services_add" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'services_edit', $services_edit, ['id' => 'services_edit', 'class' => 'check_services']) }}
-                                                <label for="services_edit" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'services_delete', $services_delete, ['id' => 'services_delete', 'class' => 'check_services']) }}
-                                                <label for="services_delete" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                    </tr>
-
+                                     
                                     <tr class="pagetr">
                                         <td class="gray_check" rel="check_teams" style="cursor: pointer;">
                                             <input type="checkbox" class="hidden" id="check_teams_value">
@@ -726,37 +430,74 @@
                                         </td>
                                     </tr>
 
+                                    
+
+                                   
                                     <tr class="pagetr">
-                                        <td class="gray_check" rel="check_clients" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_clients_value">
-                                            {{ trans('admin.clients') }}
+                                        <td class="gray_check" rel="check_packages" style="cursor: pointer;">
+                                            <input type="checkbox" class="hidden" id="check_packages_value">
+                                            {{ trans('admin.packages') }}
                                         </td>
                                         <td>
                                             <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'clients_all', $clients_all, ['id' => 'clients_all', 'class' => 'check_clients']) }}
-                                                <label for="clients_all" style="height: 10px;"></label>
+                                                {{ Form::checkbox('permissions[]', 'packages_all', $packages_all, ['id' => 'packages_all', 'class' => 'check_packages']) }}
+                                                <label for="packages_all" style="height: 10px;"></label>
                                             </label>
                                         </td>
                                         <td>
                                             <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'clients_add', $clients_add, ['id' => 'clients_add', 'class' => 'check_clients']) }}
-                                                <label for="clients_add" style="height: 10px;"></label>
+                                                {{ Form::checkbox('permissions[]', 'packages_add', $packages_add, ['id' => 'packages_add', 'class' => 'check_packages']) }}
+                                                <label for="packages_add" style="height: 10px;"></label>
                                             </label>
                                         </td>
                                         <td>
                                             <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'clients_edit', $clients_edit, ['id' => 'clients_edit', 'class' => 'check_clients']) }}
-                                                <label for="clients_edit" style="height: 10px;"></label>
+                                                {{ Form::checkbox('permissions[]', 'packages_edit', $packages_edit, ['id' => 'packages_edit', 'class' => 'check_packages']) }}
+                                                <label for="packages_edit" style="height: 10px;"></label>
                                             </label>
                                         </td>
                                         <td></td>
                                         <td>
                                             <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'clients_delete', $clients_delete, ['id' => 'clients_delete', 'class' => 'check_clients']) }}
-                                                <label for="clients_delete" style="height: 10px;"></label>
+                                                {{ Form::checkbox('permissions[]', 'packages_delete', $packages_delete, ['id' => 'packages_delete', 'class' => 'check_packages']) }}
+                                                <label for="packages_delete" style="height: 10px;"></label>
                                             </label>
                                         </td>
                                     </tr>
+
+                                    <tr class="pagetr">
+                                        <td class="gray_check" rel="check_movies" style="cursor: pointer;">
+                                            <input type="checkbox" class="hidden" id="check_movies_value">
+                                            {{ trans('admin.movies') }}
+                                        </td>
+                                        <td>
+                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
+                                                {{ Form::checkbox('permissions[]', 'movies_all', $movies_all, ['id' => 'movies_all', 'class' => 'check_movies']) }}
+                                                <label for="movies_all" style="height: 10px;"></label>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
+                                                {{ Form::checkbox('permissions[]', 'movies_add', $movies_add, ['id' => 'movies_add', 'class' => 'check_movies']) }}
+                                                <label for="movies_add" style="height: 10px;"></label>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
+                                                {{ Form::checkbox('permissions[]', 'movies_edit', $movies_edit, ['id' => 'movies_edit', 'class' => 'check_movies']) }}
+                                                <label for="movies_edit" style="height: 10px;"></label>
+                                            </label>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
+                                                {{ Form::checkbox('permissions[]', 'movies_delete', $movies_delete, ['id' => 'movies_delete', 'class' => 'check_movies']) }}
+                                                <label for="movies_delete" style="height: 10px;"></label>
+                                            </label>
+                                        </td>
+                                    </tr>
+
+                                    
 
                                     <tr class="pagetr">
                                         <td class="gray_check" rel="check_contact" style="cursor: pointer;">
@@ -784,39 +525,8 @@
                                             </label>
                                         </td>
                                     </tr>
-                                    <tr class="pagetr">
-                                        <td class="gray_check" rel="check_consultant" style="cursor: pointer;">
-                                            <input type="checkbox" class="hidden" id="check_consultant_value">
-                                            {{ trans('admin.consultant') }}
-                                        </td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'consultant_all', $consultant_all, ['id' => 'consultant_all', 'class' => 'check_consultant']) }}
-                                                <label for="consultant_all" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'consultant_edit', $consultant_edit, ['id' => 'consultant_edit', 'class' => 'check_consultant']) }}
-                                                <label for="consultant_edit" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <label class="m-checkbox m-checkbox--check-bold m-checkbox--state-primary">
-                                                {{ Form::checkbox('permissions[]', 'consultant_delete', $consultant_delete, ['id' => 'consultant_delete', 'class' => 'check_consultant']) }}
-                                                <label for="consultant_delete" style="height: 10px;"></label>
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    
-                                    
-                                   
 
-                                    
-
-                                    
+                                  
                                   
                                 </table>
                             </div>

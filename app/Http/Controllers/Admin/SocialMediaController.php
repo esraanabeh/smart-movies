@@ -30,12 +30,7 @@ class SocialMediaController extends Controller
     public function index()
     {
         //
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بفتح صفحة حسابات التواصل الإجتماعي';
-        $action->en_action = 'Open Social Media page';
-        $action->ip = request()->ip();
-        $action->save();
+       
 
         $social_media = $this->social_media->getAll();
         return view('admin.social_media.index', ['social_media' => $social_media]);
@@ -54,31 +49,18 @@ class SocialMediaController extends Controller
 
     public function store(StoreSocial $request)
     {
-        $imageName = '';
+        
 
-        if ($request->hasFile('image')) {
-
-            $imageName = time() . '.' . $request->image->extension();
-
-            $request->image->move(public_path('image'), $imageName);
-
-            $image = $request->file('image');
-
-        }
+        
         $social_media = new SocialMedia();
         $type = $request->type;
         $social_media->type = $type;
         $link = $request->link;
         $social_media->link = $link;
-        $social_media->image = $imageName;
+       
         $social_media->save();
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بإضافة حساب جديد ' . $request['ar_name'];
-        $action->en_action = 'Add new social account ' . $request['en_name'];
-        $action->ip = request()->ip();
-        $action->save();
+       
 
         $message = trans('admin.add_suc');
         return back()->with(['message' => $message]);
@@ -109,24 +91,10 @@ class SocialMediaController extends Controller
         //
         $this->social_media->edit($id, $request);
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بتعديل حساب تواصل إجتماعي حالي ' . $request['link'];
-        $action->en_action = 'Edit current social media account ' . $request['link'];
-        $action->ip = request()->ip();
-        $action->save();
+       
 
-        $imageName = "";
         $social_media = SocialMedia::findOrFail($id);
-        if ($request->hasFile('image')) {
-
-            $imageName = time() . '.' . $request->image->extension();
-
-            $request->image->move(public_path('image'), $imageName);
-
-            $image = $request->file('image');
-            $social_media->image = $imageName;
-        }
+        
 
         $type = $request->type;
         $link = $request->link;
@@ -143,12 +111,7 @@ class SocialMediaController extends Controller
         $social_media = SocialMedia::find($id);
         // dd($social_media,$id);
 
-        $action = new \App\Models\Action();
-        $action->user_id = Auth::User()->id;
-        $action->ar_action = 'قام بحذف حساب حالي ' . $social_media['ar_name'];
-        $action->en_action = 'Delete current account ' . $social_media['en_name'];
-        $action->ip = request()->ip();
-        $action->save();
+     
 
         $social_media->delete();
 
