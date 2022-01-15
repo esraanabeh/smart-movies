@@ -14,7 +14,7 @@ class SiteSiteController extends Controller
     public function index() {
         $social_media=SocialMedia::get();
         $site=Setting::get();
-        // dd($site);
+        // dd($site)
         $packages=Package::get();
         return view('site.index',compact('site', 'packages','social_media'));
     }
