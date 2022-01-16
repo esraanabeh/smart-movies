@@ -95,7 +95,7 @@ if ($lang == "ar") {
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row discount" >
                             <label for="price_after_discount" class="col-sm-3 col-form-label">{{trans('admin.price_after_discount')}}</label>
                             <div class="col-sm-9">
                                 {{ Form::text('price_after_discount', $package['price_after_discount'], ['class'=>'form-control','id'=>'price_after_discount']) }}
