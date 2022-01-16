@@ -68,7 +68,6 @@ if ($lang == "ar") {
                                 <th class="{{$text}}">{{trans('admin.image')}}</th>
                                 <th class="{{$text}}">{{trans('admin.rate')}}</th>
                                 <th class="{{$text}}">{{trans('admin.price')}}</th>
-                                {{-- <th class="{{$text}}">{{trans('admin.price_after_discount')}}</th> --}}
                                 <th class="{{$text}}">{{trans('admin.edit')}}</th>
                                 <th class="{{$text}}">{{trans('admin.delete')}}</th>
                             </tr>
@@ -91,6 +90,8 @@ if ($lang == "ar") {
                                     {{ number_format($package['price'] ) }}
                                     @endif
                                 </td>
+
+                                
                                
                                
                                 <td>

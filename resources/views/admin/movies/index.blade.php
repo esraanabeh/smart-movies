@@ -67,7 +67,6 @@ if ($lang == "ar") {
                                 <th class="{{$text}}">{{trans('admin.name')}}</th>
                                 <th class="{{$text}}">{{trans('admin.image')}}</th>
                                 <th class="{{$text}}">{{trans('admin.video')}}</th>
-                                {{-- <th class="{{$text}}">{{trans('admin.package_id')}}</th> --}}
                                 <th class="{{$text}}">{{trans('admin.edit')}}</th>
                                 <th class="{{$text}}">{{trans('admin.delete')}}</th>
                             </tr>
@@ -85,7 +84,9 @@ if ($lang == "ar") {
                                     <source src="{{URL::to('video/'.$movie['video'])}}" type="video/mp4"> 
                                        
                                </video> </td>
-                                {{-- <td>{{$movie['package_id']}}</td> --}}
+
+
+                              
                                 
                                
                                 <td>

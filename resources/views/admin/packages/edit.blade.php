@@ -158,6 +158,10 @@ if ($lang == "ar") {
     </div>
 
 </section>
+
+@endsection
+@section('scripts')
+            
 <script>
     function previewFile(input) {
         var image = $('input[type=file]').get(0).files[0];
@@ -171,7 +175,25 @@ if ($lang == "ar") {
 
     }
 </script>
+ <script>
+    var lang = '{!! app()->getLocale() !!}';
+   
 
+    $("body").on("change", "#is_discount", function (e) {
+        var discount = $('#is_discount').val();
+        if (discount == 1) {
+            $('.discount').show();
+        } else {
+            $('.discount').hide();
+        }
+    });
+    var discount = $('#is_discount').val();
+    if (discount == 1) {
+        $('.discount').show();
+    } else {
+        $('.discount').hide();
+    }
+</script>
 @endsection
 
 

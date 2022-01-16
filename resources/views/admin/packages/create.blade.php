@@ -55,7 +55,7 @@ if ($lang == "ar") {
 
 
                         <div class="form-group row">
-                            <label for="name" class="col-sm-3 col-form-label">{{trans('admin.name')}}</label>
+                            <label for="name" class="col-sm-4 col-form-label">{{trans('admin.name')}}</label>
                             <div class="col-sm-8 ">
                                 {{ Form::text('name', null, ['class'=>'form-control','id'=>'name']) }}
                                 @if($errors->has('name'))
@@ -65,7 +65,7 @@ if ($lang == "ar") {
                         </div>
 
                         <div class="form-group row">
-                            <label for="file" class="col-sm-3 col-form-label">{{trans('admin.image')}}
+                            <label for="file" class="col-sm-4 col-form-label">{{trans('admin.image')}}
                                 <span dir="ltr"></span></label>
                             <div class="col-sm-8 custom-file" style="height: auto">
                                 <input type="file" name="image" class="form-control" onchange="previewFile(this)">
@@ -112,7 +112,7 @@ if ($lang == "ar") {
                         </div>
 
 
-                        <div class="form-group row offer" >
+                        <div class="form-group row discount" style="display: none" >
                             <label for="price_after_discount"
                                    class="col-sm-4 col-form-label">{{trans('admin.product_price_after_discount')}}</label>
                             <div class="col-sm-8">
@@ -138,6 +138,10 @@ if ($lang == "ar") {
             
             </section>
             
+            
+            @endsection
+            @section('scripts')
+            
             <script>
                 function previewFile(input) {
                     var image = $('input[type=file]').get(0).files[0];
@@ -151,5 +155,23 @@ if ($lang == "ar") {
             
                 }
             </script>
-            
+             <script>
+                var lang = '{!! app()->getLocale() !!}';
+               
+        
+                $("body").on("change", "#is_discount", function (e) {
+                    var discount = $('#is_discount').val();
+                    if (discount == 1) {
+                        $('.discount').show();
+                    } else {
+                        $('.discount').hide();
+                    }
+                });
+                var discount = $('#is_discount').val();
+                if (discount == 1) {
+                    $('.discount').show();
+                } else {
+                    $('.discount').hide();
+                }
+            </script>
             @endsection
