@@ -1,6 +1,6 @@
 <div class="preloader">
     <div class="preloader-loading">
-        <img src="images/logo-m.png" data-src="images/logo-m.png" class="lazyload">
+        <img src="{{ asset('site/images/logo-m.png') }}" data-src="{{ asset('site/images/logo-m.png') }}" class="lazyload">
     </div>
 </div>
 <div class="top_nav">

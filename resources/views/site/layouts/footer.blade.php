@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <a class="navbar-brand" href="index.html"><img src="{{ asset('site/images/logo-m.png') }}"
+                    <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('site/images/logo-m.png') }}"
                             data-src="{{ asset('site/images/logo-m.png') }}" class="lazyload"></a>
                             @foreach ($site as $sit)
                     <p> {{$sit['footer_text'] ?? ' '}} </p>
